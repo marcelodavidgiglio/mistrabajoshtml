@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario para CILSA</title>
+	<style type="text/css">
+		body{background-color:green }
+		h1{font-family:arial;
+			color:white;}
+		label{font-family:arial;
+			padding: 0px;}
+		form{font-family: arial;
+			color: white;
+			padding:5px;}	
+		</style>
+</head>
+<body>
+	<h1> Formulario de Inscripcion</h1> 
+	<p>
+	   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTv2hNqofHJWsr4sZAiDqR9cogkYxQn9I2DIw&usqp=CAU">
+	</p>
+	<form action="login.php" method="post">
+		<br>
+			<label>Nombre:</label>
+		<input type="text">
+	   </br>
+	   <br>
+		<label>Apellido:</label>
+		<input type="text">
+		</br>
+		<br>
+		Genero:<input type="radio" name="genero"value="mujer"id="mujer"/><label for="mujer">Mujer</label>
+		<input type="radio" name="genero"
+		value="hombre"id="hombre"/><label for="hombre">Hombre</label>
+		<input type="radio" name="genero"value="otro"id="otro"/><label for="otro">Otro</label>
+		</br>
+		<br>Cursos:
+		<select name="cursos" id="cursos">
+			<option value="elegir un curso">Elegir un curso</option>
+			<option value="curso de operador de pc">Curso de operador de pc</option>
+			<option value="curso de introduccion a programacion">Curso de introduccion a Programacion</option>
+			<option value="curso de arduino">Curso de Arduino</option>
+		</select>
+		</br>
+		<br>Conexion:
+		<input type="checkbox" name="computadora" id="computadora"/><label for="computadora">Computadora</label>
+	    <input type="checkbox" name="tablet" id="tablet"/><label for="tablet">Tablet</label>
+	    <input type="checkbox" name="smartphone" id="smartphone"/><label for="smartphone">Smartphone</label>
+	    </br>
+	    <br>
+	    <label for="comentario">Comentarios:</label>
+	    <br>
+	    <textarea name="comentario" id="comentario"></textarea>
+	    <br>Correo:
+	    <input type="text"placeholder= "correo@ejemplo.com"
+	</br>
+	<br>Contraseña:
+	<input type="password" name="contraseña" value=""/>
+</br>
+	   <div class="enviar">
+	   	<input type="submit" value="Enviar"</div>
+	   	<input type="reset" name="limpiar" value="Cancelar"/>
+	   </form>
+
+</body>
+</html>
